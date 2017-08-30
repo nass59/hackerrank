@@ -1,4 +1,3 @@
-# hackerrank
-Hacker Rank PHP
+# Hacker Rank PHP
 
 ![Alt text](big-o.jpg?raw=true "Title")
