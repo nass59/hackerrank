@@ -3,12 +3,21 @@
 declare(strict_types = 1);
 
 /**
+ * Implementation of an algorithm to determine if a string has all unique
+ * characters.
+ * ASCII string
+ */
+
+/**
  * Class MapUniquenessDetector
  */
 class MapUniquenessDetector
 {
     /**
      * @param string $str
+     *
+     * Time complexity O(n)
+     * Space complexity O(1)
      *
      * @return boolean
      */
@@ -71,11 +80,7 @@ class BuiltInUniquenessDetector
     {
         $chars = array_unique(str_split($str));
 
-        if (strlen($str) === sizeof($chars)) {
-            return true;
-        }
-
-        return false;
+        return strlen($str) === sizeof($chars);
     }
 }
 
