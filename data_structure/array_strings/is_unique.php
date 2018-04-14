@@ -80,7 +80,7 @@ class BuiltInUniquenessDetector
     {
         $chars = array_unique(str_split($str));
 
-        return strlen($str) === sizeof($chars);
+        return mb_strlen($str) === sizeof($chars);
     }
 }
 
