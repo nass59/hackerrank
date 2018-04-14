@@ -3,14 +3,14 @@
 declare(strict_types = 1);
 
 /**
- * Class PalindromPermutationChecker
+ * Class PalindromePermutationChecker
  */
-class PalindromPermutationChecker
+class PalindromePermutationChecker
 {
     /**
      * @param string $str
      *
-     * To be a permutation of a palindromme, a string can have no more
+     * To be a permutation of a palindrome, a string can have no more
      * than one character that is odd.
      *
      * @return bool
@@ -40,5 +40,5 @@ class PalindromPermutationChecker
     }
 }
 
-PalindromPermutationChecker::isPalindromePermutation('Tact coa'); // true -> t: 2, a: 2, c: 2, o: 1
-PalindromPermutationChecker::isPalindromePermutation('coca cola'); // false -> c: 3, l: 1
+PalindromePermutationChecker::isPalindromePermutation('Tact coa'); // true -> t: 2, a: 2, c: 2, o: 1
+PalindromePermutationChecker::isPalindromePermutation('coca cola'); // false -> c: 3, l: 1
