@@ -17,7 +17,7 @@ class PalindromePermutationChecker
      */
     public static function isPalindromePermutation(string $str): bool
     {
-        $letters = [];
+        $chars = [];
 
         for ($i = 0, $length = mb_strlen($str); $i < $length; $i++) {
             $char = mb_strtolower($str[$i]);
@@ -26,11 +26,11 @@ class PalindromePermutationChecker
                 continue;
             }
 
-            $letters[$char] = array_key_exists($char, $letters) ? $letters[$char] + 1 : 1;
+            $letters[$char] = array_key_exists($char, $chars) ? $chars[$char] + 1 : 1;
         }
 
         $oddCount = 0;
-        foreach ($letters as $char => $count) {
+        foreach ($chars as $char => $count) {
             if ($count % 2 !== 0 && ++$oddCount > 1) {
                 return false;
             }
