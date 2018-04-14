@@ -68,7 +68,6 @@ PermutationSort::permutation('hello', 'world'); // false
 PermutationSort::permutation('hello', 'olleh'); // true
 PermutationSort::permutation('hello', 'eolhl'); // true
 
-
 PermutationHashMap::permutation('hello', 'xwfgy'); // false
 PermutationHashMap::permutation('hello', 'world'); // false
 PermutationHashMap::permutation('hello', 'olleh'); // true
